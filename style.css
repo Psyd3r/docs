@@ -1,0 +1,11 @@
+.nav-logo{
+  width: 150px !important;
+  height: auto !important;
+  max-width: 200px !important;
+}
+
+.nav-logo img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
