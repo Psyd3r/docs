@@ -11,15 +11,8 @@
   "navigation": {
     "dropdowns": [
       {
-        "dropdown": "Sales",
-        "icon": "cart-shopping",
-        "pages": [
-          "index"
-        ]
-      },
-    {
-        "dropdown": "Field",
-        "icon": "location-dot",
+        "dropdown": "Guia do Usuário",
+        "icon": "book-user",
         "groups":[
           {
           "group": "Primeiros Passos",
@@ -27,6 +20,24 @@
             "Introdução"
           ]
         }]
+      },
+    {
+        "dropdown": "Sales",
+        "icon": "cart-shopping",
+        "groups":[
+          {
+          "group": "Primeiros Passos",
+          "pages": [
+            ""
+          ]
+        }]
+      },
+      {
+        "dropdown": "Field",
+        "icon": "location-dot",
+        "pages": [
+          ""
+        ]
       }
     ]
   },
