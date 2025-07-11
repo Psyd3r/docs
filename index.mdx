@@ -1,28 +1,48 @@
 ---
-title: "Introdução"
-sidebarTitle: "Começando"
+title: "Guia do Usuário"
+description: "Conheça a próxima geração de documentação. Nativa de IA, bonita e pronta para uso, e construída para desenvolvedores."
+mode: "custom"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
+export const HeroCard = ({imageSrc, title, description, href}) => {
+  return <a className="group cursor-pointer pb-8" href={href}>
+      <img src={imageSrc} className="pointer-events-none group-hover:scale-105 transition-all duration-100" />
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{title}</h3>
+      <span className="mt-1.5">
+        {description}
+      </span>
+    </a>;
+};
 
-<img
-  className="hidden dark:block"
-  src="/WhatsAppImage2025-07-09at16.51.55.jpeg"
-  alt="Hero Dark"
-  title={true}
-/>
+<div className="relative">
+  <div className="absolute top-0 lg:-top-16 left-0 right-0">
+    <img src="https://mintlify.s3.us-west-1.amazonaws.com/mintlify/images/hero/background-light.png" className="block dark:hidden pointer-events-none" />
+    <img src="https://mintlify.s3.us-west-1.amazonaws.com/mintlify/images/hero/background-dark.png" className="hidden dark:block pointer-events-none" />
+  </div>
 
-Nosso objetivo é oferecer uma plataforma completa, pensada para o setor do agronegócio, que automatiza e simplifica processos em vendas, campo e gestão tudo isso com foco em **agilidade, rastreabilidade e controle**.
+  <div className="px-4 py-16 lg:py-48 lg:pb-24 max-w-3xl mx-auto">
+    <h1 className="text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
+      Guia do Usuário
+    </h1>
 
-\
-O sistema é formado por módulos especializados, como **Sales** (comercial) e **Field** (campo), que se integram para entregar uma visão ampla do seu negócio, conectando todos os envolvidos da gestão à operação.
+    <p className="max-w-xl mx-auto px-4 mt-4 text-lg text-center text-gray-500 dark:text-zinc-500">
+      Este guia foi criado para ajudar você a utilizar todos os recursos do sistema de forma simples, segura e eficiente.
+    </p>
 
-Com uma interface amigável, integrações inteligentes e relatórios personalizados, a plataforma foi desenvolvida para ser uma **ferramenta estratégica**, e não apenas um sistema de registro.
+    <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
+      <HeroCard 
+        imageSrc="/images/sales.png" 
+        title="Vendas" 
+        description="Gerencie suas vendas e acompanhe o desempenho" 
+        href="/vendas" 
+      />
 
-<Info>
-  **Acreditamos que tecnologia no agro deve ser simples, conectada e de fácil adoção.**
-</Info>
+      <HeroCard 
+        imageSrc="/images/field.png" 
+        title="Campo" 
+        description="Ferramentas para trabalho em campo" 
+        href="/campo" 
+      />
+    </div>
+  </div>
+</div>
