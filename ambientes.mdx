@@ -1,0 +1,47 @@
+---
+title: "Ambientes de Uso"
+description: "Ao utilizar o sistema, é fundamental compreender a existência de dois ambientes distintos, cada um com objetivos específicos. Essa separação garante mais segurança, controle e confiabilidade nos processos."
+icon: "code-branch"
+---
+
+## 🧪 Ambiente de Homologação
+
+O ambiente de **homologação** é destinado exclusivamente para **testes, validações e simulações**. Nele, são avaliadas novas funcionalidades, correções de bugs, melhorias na interface ou qualquer outra atualização do sistema **antes da liberação para o uso real**.
+
+- **Finalidade:** Testar o comportamento do sistema sem comprometer dados reais.
+- **Público-alvo:** Equipe de testes, desenvolvedores, analistas e usuários que irão validar funcionalidades.
+- **Características:**
+  - Pode conter dados fictícios ou copiados da produção (de forma anonimizada).
+  - Pode ser reiniciado, resetado ou atualizado a qualquer momento.
+  - **Não é recomendado para uso operacional ou lançamento de dados reais.**
+
+<Warning>
+  **Importante:** O ambiente de homologação pode ser limpo periodicamente durante atualizações. **Jamais utilize este ambiente para registros oficiais.**
+</Warning>
+
+## 🚀 Ambiente de Produção
+
+O ambiente de **produção** é o ambiente real, utilizado no dia a dia pela equipe, onde todos os dados inseridos possuem validade operacional.
+
+- **Finalidade:** Uso oficial da plataforma pela equipe em atividades reais.
+- **Público-alvo:** Usuários finais, operadores, gestores e qualquer profissional que utiliza o sistema em sua rotina.
+- **Características:**
+  - Dados são autênticos e refletem a realidade da operação.
+  - Qualquer ação realizada terá efeito direto nos resultados e relatórios.
+  - A estabilidade, performance e segurança são prioridades neste ambiente.
+
+<Warning>
+  **Atenção:** Toda ação realizada em produção tem impacto direto. Portanto, evite testes ou simulações neste ambiente.
+</Warning>
+
+## ✅ Resumo das Diferenças
+
+| **Característica** | **Homologação** 🧪           | **Produção** 🚀           |
+| :----------------- | :--------------------------- | :------------------------ |
+| Finalidade         | Testes e validações          | Operação real             |
+| Tipo de dados      | Fictícios ou de teste        | Oficiais e válidos        |
+| Riscos ao sistema  | Nenhum (ambiente isolado)    | Impacto direto no negócio |
+| Acesso             | Equipe técnica e validadores | Usuários operacionais     |
+| Atualizações       | Frequentes e instáveis       | Estáveis e controladas    |
+
+Essa separação garante que sua equipe possa testar com segurança e operar com confiança. Para dúvidas ou acessos aos ambientes, entre em contato com o suporte técnico ou administrador do sistema.

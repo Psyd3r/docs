@@ -17,9 +17,16 @@
           {
           "group": "Primeiros Passos",
           "pages": [
-            "Introdução"
+            "Introdução","ambientes"
           ]
-        }]
+        },
+      {
+        "group": "Central de Suporte",
+        "pages": [
+          "suporte",
+          "contato"
+        ]
+      }]
       },
     {
         "dropdown": "Sales",
