@@ -1,0 +1,160 @@
+---
+title: "Gestão de Pedidos de Venda"
+sidebarTitle: "Pedido de Venda"
+icon: "handshake"
+description: "A funcionalidade Pedidos dentro do módulo Sales centraliza toda a operação comercial do sistema, permitindo criar, acompanhar e gerenciar pedidos de forma eficiente."
+---
+
+<Info>
+  **Quer ir direto ao ponto?** Se você já conhece o sistema e quer apenas saber como criar um pedido na prática, [**clique aqui para ir direto ao tutorial**](https://docs-simple-main.vercel.app/paineisSales/Vendas/pedido_de_venda#-mas-como-criar-um-pedido-na-pr%C3%A1tica) de criação passo a passo\!
+</Info>
+
+<Tip>
+  O sistema suporta diferentes tipos de pedidos (desmembrados, substituídos e barter) adaptando-se às necessidades específicas de cada operação comercial.
+</Tip>
+
+## Funcionalidades Principais
+
+### Listagem e Organização
+
+A interface permite visualizar todos os pedidos através de uma listagem organizada com opções de filtros para localização rápida. O sistema divide os pedidos entre **ativos** e **cancelados**, facilitando o gerenciamento e consulta histórica.
+
+
+
+### **Acompanhamento por Status**
+
+Cada pedido possui controle através de status que indicam sua situação atual no fluxo comercial, permitindo acompanhamento visual do progresso e identificação de pendências.
+
+### Campos de Ações
+
+Cada pedido oferece um menu completo de ações acessível através do ícone de ações na listagem:
+
+<CardGroup cols={2}>
+  <Card title="Visualizar" icon="eye">
+    
+  </Card>
+  <Card title="Criar Cópia (Clone)" icon="copy">
+    
+  </Card>
+  <Card title="Copiar pedido (Novo)" icon="clone">
+    
+  </Card>
+  <Card title="Reabrir pedido" icon="up">
+    
+  </Card>
+  <Card title="Reprovar pedido" icon="thumbs-down">
+    
+  </Card>
+  <Card title="Cancelar pedido" icon="circle-minus">
+    
+  </Card>
+  <Card title="Liberar desmembrar" icon="sparkles">
+    
+  </Card>
+  <Card title="Eliminar Resíduos" icon="sparkles">
+    
+  </Card>
+  <Card title="Logs de aprovações" icon="sparkles">
+    
+  </Card>
+  <Card title="Excluir pedido" icon="sparkles">
+    
+  </Card>
+</CardGroup>
+
+## Criação de Novos Pedidos
+
+### Formulário de Cabeçalho
+
+O processo de criação inicia com o preenchimento das informações principais do pedido, incluindo dados comerciais, participantes da operação e condições de negociação.
+
+<Steps>
+  <Step title="Definição das Partes">
+    Configure as informações dos participantes da operação comercial, incluindo vendedores responsáveis e clientes envolvidos.
+  </Step>
+  <Step title="Condições comerciais">
+    Estabeleça os parâmetros da negociação, incluindo tipo de venda, formas de pagamento e modalidades de entrega.
+  </Step>
+  <Step title="Configurações Específicas">
+    Defina características particulares da operação, como garantias, tabelas de preço e modalidades de venda especiais.
+  </Step>
+</Steps>
+
+### **Condições de Pagamento**
+
+O sistema permite configurar parcelamentos personalizados através de uma interface que possibilita definir vencimentos e percentuais para cada parcela, adaptando-se a diferentes necessidades de financiamento. As parcelas são geradas automaticamente de acordo com os vencimentos e porcentagens configurados no cabeçalho do pedido.
+
+<Note>
+  O sistema calcula automaticamente o frete baseado no estado de destino e tipo de embalagem, utilizando tabelas de frete configuráveis por região.
+</Note>
+
+### Opções Especiais
+
+Durante a criação, é possível configurar características específicas como pedidos do tipo **“cancela e substitui”**, emissão de recibos e vincular pedidos relacionados quando necessário.
+
+<Warning>
+  As opções disponíveis podem variar conforme as configurações e permissões estabelecidas para cada usuário ou empresa.
+</Warning>
+
+## Gestão de Itens do Pedido
+
+### Visualização dos Itens
+
+Após acessar um pedido através da ação “Veja os produtos do pedido”, é possível gerenciar os itens que compõem a operação comercial. A interface apresenta informações essenciais de cada item como produto, quantidades, preços e descontos aplicados.
+
+### Adição de Novos Itens
+
+O sistema permite adicionar produtos ao pedido através de um formulário estruturado que facilita a composição da operação:
+
+<Steps>
+  <Step title="Seleção do Produto">
+    Configure a tabela de preços base e selecione o grupo de produtos para filtrar as opções disponíveis. Em seguida, escolha o produto específico desejado.
+  </Step>
+  <Step title="Definição de preços">
+    Estabeleça o preço unitário do item e aplique descontos percentuais quando necessário, com cálculo automático dos valores finais.
+  </Step>
+  <Step title="Quantidades">
+    Defina a quantidade do produto, com visualização imediata do total do item baseado no preço e desconto configurados.
+  </Step>
+</Steps>
+
+## Fluxos de Aprovação
+
+O sistema oferece fluxos de aprovação configuráveis que podem ser estabelecidos conforme critérios como valor, cliente, produto ou hierarquia organizacional, garantindo governança adequada sobre as operações comerciais.
+
+## **🤔 Mas como criar um pedido na prática?**
+
+Agora que você conhece as funcionalidades, vamos ao passo a passo prático para criar seu primeiro pedido no sistema:
+
+<Warning>
+  **Importante:** Os campos e opções apresentados podem variar conforme as regras de negócio e configurações específicas da sua empresa. O processo base permanece o mesmo, mas a interface se adapta às suas necessidades.
+</Warning>
+
+<Steps>
+  <Step title="Iniciando a Criação">
+    Acesse o módulo **Sales \> Pedidos** e clique no botão **“Adicionar”** no canto superior direito da tela.
+  </Step>
+  <Step title="Preenchendo o Cabeçalho">
+    Configure as informações essenciais do pedido incluindo filial, safra, cliente, propriedade, vendedor e tipo de frete. A tabela de preços será automaticamente filtrada de acordo com a filial e o estado da propriedade selecionada.
+  </Step>
+  <Step title="Definindo Condições Comerciais">
+    Estabeleça os parâmetros da negociação configurando tipo de venda, formas de pagamento e modalidade de venda adequada à operação.
+  </Step>
+  <Step title="Configurando Parcelamento">
+    Configure os vencimentos e porcentagens para cada parcela quando necessário. O sistema gerará automaticamente as parcelas de acordo com os vencimentos e percentuais definidos no cabeçalho do pedido.
+  </Step>
+  <Step title="Adicionando Produtos">
+    Após salvar o cabeçalho, acesse “Veja os produtos do pedido” para gerenciar os itens. É possível adicionar múltiplos produtos ao pedido, editar valores de preço base e tratamentos específicos quando aplicável, além de definir quantidades e descontos individuais.
+  </Step>
+  <Step title="Finalizando">
+    Com todos os itens incluídos, utilize o botão “Finalizar Pedido” para concluir a operação. O sistema calculará automaticamente o frete baseado no estado de destino e tipo de embalagem configurado.
+  </Step>
+</Steps>
+
+<Note>
+  **Dica importante:** Sempre selecione primeiro o cliente, pois isso facilitará o preenchimento automático de informações como propriedade e condições comerciais pré-configuradas.
+</Note>
+
+<Warning>
+  Certifique-se de salvar o cabeçalho antes de adicionar produtos. Sem isso, não será possível incluir itens no pedido.
+</Warning>
