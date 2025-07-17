@@ -19,7 +19,12 @@ description: "A funcionalidade Pedidos dentro do módulo Sales centraliza toda a
 
 A interface permite visualizar todos os pedidos através de uma listagem organizada com opções de filtros para localização rápida. O sistema divide os pedidos entre **ativos** e **cancelados**, facilitando o gerenciamento e consulta histórica.
 
-
+<img 
+  src="/images/pedidolistagem.png" 
+  alt="Listagem e Organização"
+  height="300"
+  className="rounded-lg"
+/>
 
 ### **Acompanhamento por Status**
 
@@ -38,7 +43,7 @@ Cada pedido oferece um menu completo de ações acessível através do ícone de
   </Card>
   <Card title="Copiar pedido (Novo)" icon="clone">
     
-  </Card>
+  </Card >
   <Card title="Reabrir pedido" icon="up">
     
   </Card>
@@ -48,16 +53,16 @@ Cada pedido oferece um menu completo de ações acessível através do ícone de
   <Card title="Cancelar pedido" icon="circle-minus">
     
   </Card>
-  <Card title="Liberar desmembrar" icon="sparkles">
+  <Card title="Liberar desmembrar" icon="shield-halved">
     
   </Card>
-  <Card title="Eliminar Resíduos" icon="sparkles">
+  <Card title="Eliminar Resíduos" icon="recycle">
     
   </Card>
-  <Card title="Logs de aprovações" icon="sparkles">
+  <Card title="Logs de aprovações" icon="clock-rotate-left">
     
   </Card>
-  <Card title="Excluir pedido" icon="sparkles">
+  <Card title="Excluir pedido" icon="trash">
     
   </Card>
 </CardGroup>
@@ -102,6 +107,13 @@ Durante a criação, é possível configurar características específicas como 
 
 Após acessar um pedido através da ação “Veja os produtos do pedido”, é possível gerenciar os itens que compõem a operação comercial. A interface apresenta informações essenciais de cada item como produto, quantidades, preços e descontos aplicados.
 
+<img 
+  src="/itempedido.png" 
+  alt="teste"
+  height="300"
+  className="rounded-lg"
+/>
+
 ### Adição de Novos Itens
 
 O sistema permite adicionar produtos ao pedido através de um formulário estruturado que facilita a composição da operação:
@@ -133,6 +145,12 @@ Agora que você conhece as funcionalidades, vamos ao passo a passo prático para
 <Steps>
   <Step title="Iniciando a Criação">
     Acesse o módulo **Sales \> Pedidos** e clique no botão **“Adicionar”** no canto superior direito da tela.
+            <img 
+    src="pedidopasso1.png" 
+    alt="teste"
+    height="300"
+    className="rounded-lg"
+    />
   </Step>
   <Step title="Preenchendo o Cabeçalho">
     Configure as informações essenciais do pedido incluindo filial, safra, cliente, propriedade, vendedor e tipo de frete. A tabela de preços será automaticamente filtrada de acordo com a filial e o estado da propriedade selecionada.
