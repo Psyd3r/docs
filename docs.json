@@ -36,8 +36,9 @@
           {
           "group": "Cadastro",
           "pages": [
-            "Clientes",
-            "Carteiracliente"
+            "usuarios",
+            "Carteiracliente",
+            "consultores"
           ]
         },
       {
@@ -45,7 +46,15 @@
         "pages": [
           "Pedido de Venda"
         ]
-      }]
+      },
+      {
+        "group": "Entrega",
+        "pages": [
+          "pg-entrega",
+          "mnt-de-carga"
+        ]
+      }
+    ]
       },
       {
         "dropdown": "Field",
