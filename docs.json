@@ -37,8 +37,9 @@
           "group": "Cadastro",
           "pages": [
             "usuarios",
-            "Carteiracliente",
-            "consultores"
+            "cargo",
+            "consultores",
+            "Carteiracliente"
           ]
         },
       {

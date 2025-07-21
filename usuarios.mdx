@@ -7,36 +7,62 @@ description: "Esta seção do manual irá guiá-lo através do processo de geren
 ## Visão Geral da Tela de Usuários
 
 A tela "Usuários" é o painel central para a administração de todas as contas de usuário cadastradas no sistema. Seu objetivo principal é fornecer uma interface clara e eficiente para que os administradores possam gerenciar o acesso e as permissões dos diferentes membros da equipe.
-    <img 
-      src="overview-usuarios.png" 
-      alt="Overview"
-      height="300"
-      className="rounded-lg" />
+
+<img
+  src="overview-usuarios.png"
+  alt="Overview"
+  height="300"
+  className="rounded-lg"
+/>
 
 ### Componentes da Tela de Usuários:
 
 - **Nome:** Exibe o nome completo do usuário.
 - **Grupo de Permissão:** Indica o grupo de permissão ao qual o usuário pertence, definindo suas capacidades dentro do sistema.
-- **Status:** Representado por um ícone de cadeado, este componente permite **ativar** ou **desativar** um usuário. Apenas usuários com as permissões adequadas podem realizar esta ação.
 
   <CardGroup cols={1}>
-    <Card title="Status" icon="lock">
-      
+    <Card title="Status" icon="lock" horizontal>
+      Representado por um ícone de cadeado, este componente permite **ativar** ou  **desativar** um usuário. Apenas usuários com as permissões adequadas podem realizar esta ação.
     </Card>
   </CardGroup>
 - **Ações:** Esta coluna contém os botões para as seguintes operações:
 
 <CardGroup cols={3}>
   <Card title="Visualizar" icon="eye" horizontal>
-    
+    Exibe os detalhes do usuário em modo somente leitura.
   </Card>
   <Card title="Editar" icon="pencil" horizontal>
-    
+    Permite a modificação das informações do usuário.
   </Card>
   <Card title="Excluir" icon="trash" horizontal>
-    
+    Remover o registro do usuário do sistema de forma definitiva.
   </Card>
 </CardGroup>
+
+<Warning>
+  **Importante:** Mesmo após a exclusão de informações no painel, todos os registros são mantidos em ambiente seguro. Isso garante o histórico de informações e, em casos de exclusão inadequada, a possibilidade de restauração dos dados.
+</Warning>
+
+### **Componentes do Formulário  do Usuário**
+
+- **Nome:** . Informe o nome completo do usuário.
+- **Email:**  Endereço de e-mail do usuário.
+- **Login:** Nome de usuário utilizado para acessar o sistema. Deve ser único e definido no momento do cadastro.
+- **Tipo de Login:** Define a forma de autenticação do usuário no sistema. As opções disponíveis são:
+
+    <CardGroup cols={2}>
+      <Card title="API" icon="globe" iconType="regular">
+        - Realiza autenticação interna diretamente no banco de dados do sistema.
+      </Card>
+      <Card title="AD" icon="server">
+        - Autenticação via Active Directory, usando credenciais da rede corporativa.
+      </Card>
+    </CardGroup>
+- **Grupo de Permissão:** Define o nível de acesso do usuário. Deve ser atribuído conforme a função do colaborador.
+
+  <Note>
+    Atenção: A configuração incorreta desses campos pode comprometer a segurança e o acesso ao sistema.
+  </Note>
 
 ## 🤔 Mas como criar um usuário?
 
@@ -45,20 +71,22 @@ Para criar um novo usuário no sistema, siga os passos abaixo:
 <Steps>
   <Step title='Na tela "Usuários", clique no botão  + Adicionar" localizado no canto superior direito da tela.'>
     Isso o levará para a tela "Novo Usuário", onde você poderá inserir as informações necessárias para criar uma nova conta.
-    <img 
-      src="criar-usuario.png" 
+
+    <img
+      src="criar-usuario.png"
       alt="Novo Usuário"
       height="300"
-      className="rounded-lg" />
+      className="rounded-lg"
+    />
   </Step>
   <Step title='Após preenchimento das informações básicas, clique no botão "Salvar Usuário" para registrar'>
     Isso o levará para tela principal da tela de usuários, onde você poderá verificar o usuário criado dentro do sistema utilizando a visualização da tabela juntamente com os filtros de busca.
-    <img 
-        src="salvar-usuario.png" 
-        alt="Salvar Usuário"
-        height="300"
-        className="rounded-lg" />
-  </Step>
 
-  
+    <img
+      src="salvar-usuario.png"
+      alt="Salvar Usuário"
+      height="300"
+      className="rounded-lg"
+    />
+  </Step>
 </Steps>
