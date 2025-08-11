@@ -40,7 +40,8 @@
             "cargo",
             "consultores",
             "Clientes",
-            "Carteiracliente"
+            "Carteiracliente",
+            "tabela-de-preco"
           ]
         },
       {
@@ -52,8 +53,10 @@
       {
         "group": "Entrega",
         "pages": [
-          "pg-entrega",
-          "mnt-de-carga"
+          "capacidade-de-entrega",
+          "excecao-entrega",
+          "mnt-de-carga",
+          "pg-entrega"
         ]
       }
     ]
