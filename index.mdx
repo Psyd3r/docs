@@ -7,12 +7,13 @@ mode: "custom"
 export const HeroCard = ({imageSrc, title, description, href}) => {
   return <a className="group cursor-pointer pb-8" href={href}>
       <img src={imageSrc} className="pointer-events-none group-hover:scale-105 transition-all duration-100" />
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{title}</h3>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{}</h3>
       <span className="mt-1.5">
         {description}
       </span>
     </a>;
 };
+
 
 <div className="relative">
   <div className="absolute top-0 lg:-top-16 left-0 right-0">
@@ -21,9 +22,9 @@ export const HeroCard = ({imageSrc, title, description, href}) => {
   </div>
 
   <div className="px-4 py-16 lg:py-48 lg:pb-24 max-w-3xl mx-auto">
-    <h1 className="text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
+    <div className="text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
       Guia do Usuário
-    </h1>
+    </div>
 
     <p className="max-w-xl mx-auto px-4 mt-4 text-lg text-center text-gray-500 dark:text-zinc-500">
       Este guia foi criado para ajudar você a utilizar todos os recursos do sistema de forma simples, segura e eficiente.
