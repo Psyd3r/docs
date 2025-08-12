@@ -7,7 +7,7 @@ mode: "custom"
 export const HeroCard = ({imageSrc, title, description, href}) => {
   return <a className="group cursor-pointer pb-8" href={href}>
       <img src={imageSrc} className="pointer-events-none group-hover:scale-105 transition-all duration-100" />
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{}</h3>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">{title}</h3>
       <span className="mt-1.5">
         {description}
       </span>
