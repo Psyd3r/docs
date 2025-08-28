@@ -40,23 +40,17 @@
             "cargo",
             "consultores",
             "Clientes",
-            "Carteiracliente",
-            "tabela-de-preco"
+            "Carteiracliente"
           ]
         },
       {
         "group": "Vendas",
         "pages": [
-          "Pedido de Venda"
         ]
       },
       {
         "group": "Entrega",
         "pages": [
-          "capacidade-de-entrega",
-          "excecao-entrega",
-          "mnt-de-carga",
-          "pg-entrega"
         ]
       }
     ]
